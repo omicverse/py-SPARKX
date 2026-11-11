@@ -1,0 +1,41 @@
+# py-SPARKX
+
+Review-stage Python reconstruction of a **subset** of SPARK, following the discovery, preregistration and reference-validation workflow in [omicverse-rebuildr](https://github.com/omicverse/omicverse-rebuildr).
+
+SPARK-X single and mixture projection kernels, covariates, ACAT and BY. No SPARK generalized linear spatial mixed models, normalization suite or arbitrary quadratic-form API.
+
+## Install and test
+
+This project has not been published on PyPI. From this checkout:
+
+```bash
+python -m pip install ".[test]"
+python -m pytest -q
+```
+
+## Usage and function map
+
+See [the executed tutorial](examples/tutorial_fixture.ipynb), [R-to-Python parameter dictionary](examples/function_by_function_R_parity.ipynb), and [complete upstream export audit](AUDIT.md).
+Inputs, orientations and unsupported modes are documented in function docstrings. No R process is used at runtime.
+
+## Reproduce the R oracle
+
+```bash
+git clone https://github.com/xzhoulab/SPARK.git ../SPARK-ref
+git -C ../SPARK-ref checkout a8b4bf27b804604dfda53da42992f100b8e4e727
+Rscript tests/reference.R ../SPARK-ref
+python -m pytest -q
+```
+
+The runner sources the pinned upstream functions, not a rewritten R approximation. RUVSeq S4 registration is intercepted to execute only matrix methods. SPARK sparse sum/mean helpers are supplied by Matrix, with unchanged statistical functions. MuSiC and muscat functions are sourced with their R dependencies loaded. muscat's source declares R >=4.6; this selected function subset was executed on R 4.5.2, not installed as the full package.
+
+muscat's public fixture additionally uses `Rscript tests/public_reference.R ../muscat-ref`.
+All other primary fixtures are synthetic and do not establish biological accuracy. Numerical gates were committed before implementation and have not been widened.
+
+## Validation and limitations
+
+4 focused tests passed locally without skips. See [reconstruction report](RECONSTRUCTION_REPORT.md) for scope and remaining release checks. This is fixture-level equivalence, not full-domain or full-package equivalence. Runtime objects and failure messages are Python-native.
+
+## Citation and license
+
+Upstream [SPARK](https://github.com/xzhoulab/SPARK) at `a8b4bf27b804604dfda53da42992f100b8e4e727`; see ATTRIBUTION.md for upstream authors and package citation context, and LICENSE for terms.

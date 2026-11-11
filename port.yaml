@@ -1,0 +1,257 @@
+{
+  "schema": "omicverse-port/v1",
+  "package": "py-SPARKX",
+  "pypi": null,
+  "import_name": "pysparkx",
+  "language": "python",
+  "upstream": {
+    "name": "SPARK",
+    "version": "1.1.1",
+    "commit": "a8b4bf27b804604dfda53da42992f100b8e4e727"
+  },
+  "parity": {
+    "status": "partial",
+    "fixture": "Pinned synthetic fixtures; muscat also includes a public Kang subset",
+    "test": "tests/"
+  },
+  "functions": [
+    {
+      "r": "ACAT",
+      "py": "pysparkx.acat",
+      "status": "partial",
+      "note": "SPARK-X single and mixture projection kernels, covariates, ACAT and BY. No SPARK generalized linear spatial mixed models, normalization suite or arbitrary quadratic-form API."
+    },
+    {
+      "r": "CombinePValues",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "ComputeGaussianL",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "ComputeGaussianPL",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "ComputeTestQuantRcpp_Gaussian",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "ComputeTestQuantRcpp_cov",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "ComputeTestQuantRcpp_nocov",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "ComputeWeightsRcpp",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "CovariatesAI",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "CreateSPARKObject",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "ED_cpp",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "FilteringGenesCells",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "NormalizeVST",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "NormalizeVSTfast",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "SparseSysMatEigen",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "SysMatEigen",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "noCovariatesAI",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "rcpparma_bothproducts",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "rcpparma_hello_world",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "rcpparma_innerproduct",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "rcpparma_outerproduct",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sp_means_Rcpp",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sp_nz_count_Rcpp",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sp_sums_Rcpp",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sp_vars_Rcpp",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "spark.ai",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "spark.fit",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "spark.test",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "spark.test_each",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "spark.vc",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "spark.weights",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sparkg_sw",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sparkg_sw_sk",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sparkx",
+      "py": "pysparkx.sparkx",
+      "status": "partial",
+      "note": "SPARK-X single and mixture projection kernels, covariates, ACAT and BY. No SPARK generalized linear spatial mixed models, normalization suite or arbitrary quadratic-form API."
+    },
+    {
+      "r": "sparkx.sk",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sparkx.sksg",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "sparkx_pval",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    },
+    {
+      "r": "transloc_func",
+      "py": null,
+      "status": "skipped",
+      "note": "Outside initial scope"
+    }
+  ],
+  "omicverse": {
+    "module": null,
+    "since": null
+  },
+  "artifacts": {
+    "audit": "AUDIT.md",
+    "report": "RECONSTRUCTION_REPORT.md",
+    "compare_notebook": "examples/compare_R_vs_Python.ipynb",
+    "function_notebook": "examples/function_by_function_R_parity.ipynb"
+  }
+}
