@@ -1,0 +1,23 @@
+{
+  "upstream": "SPARK",
+  "commit": "a8b4bf27b804604dfda53da42992f100b8e4e727",
+  "seed": 42,
+  "scope": [
+    "sparkx"
+  ],
+  "outputs": {
+    "deterministic": {
+      "atol": 1e-08,
+      "rtol": 1e-08
+    },
+    "projection": {
+      "atol": 1e-08
+    },
+    "pvalues": {
+      "spearman_min": 0.99,
+      "top20_jaccard_min": 0.9,
+      "atol": 1e-06
+    }
+  },
+  "status": "preregistered; no candidate tested"
+}
