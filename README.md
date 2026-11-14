@@ -39,3 +39,7 @@ All other primary fixtures are synthetic and do not establish biological accurac
 ## Citation and license
 
 Upstream [SPARK](https://github.com/xzhoulab/SPARK) at `a8b4bf27b804604dfda53da42992f100b8e4e727`; see ATTRIBUTION.md for upstream authors and package citation context, and LICENSE for terms.
+
+## Distribution preparation
+
+The intended PyPI distribution is `py-sparkx-omicverse`; the import remains `pysparkx`. See [release preparation](RELEASE.md) for installed-wheel validation and the manual Trusted Publishing procedure. This preparation does not mean a PyPI release is available.
