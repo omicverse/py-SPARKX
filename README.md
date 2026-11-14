@@ -1,12 +1,18 @@
 # py-SPARKX
 
-Review-stage Python reconstruction of a **subset** of SPARK, following the discovery, preregistration and reference-validation workflow in [omicverse-rebuildr](https://github.com/omicverse/omicverse-rebuildr).
+Python reconstruction of a **subset** of SPARK, following the discovery, preregistration and reference-validation workflow in [omicverse-rebuildr](https://github.com/omicverse/omicverse-rebuildr).
 
 SPARK-X single and mixture projection kernels, covariates, ACAT and BY. No SPARK generalized linear spatial mixed models, normalization suite or arbitrary quadratic-form API.
 
 ## Install and test
 
-This project has not been published on PyPI. From this checkout:
+Version **0.1.0** is available on [PyPI](https://pypi.org/project/py-sparkx-omicverse/0.1.0/):
+
+```bash
+python -m pip install "py-sparkx-omicverse==0.1.0"
+```
+
+For development and source-checkout tests:
 
 ```bash
 python -m pip install ".[test]"
@@ -40,6 +46,6 @@ All other primary fixtures are synthetic and do not establish biological accurac
 
 Upstream [SPARK](https://github.com/xzhoulab/SPARK) at `a8b4bf27b804604dfda53da42992f100b8e4e727`; see ATTRIBUTION.md for upstream authors and package citation context, and LICENSE for terms.
 
-## Distribution preparation
+## Release validation
 
-The intended PyPI distribution is `py-sparkx-omicverse`; the import remains `pysparkx`. See [release preparation](RELEASE.md) for installed-wheel validation and the manual Trusted Publishing procedure. This preparation does not mean a PyPI release is available.
+The PyPI distribution is `py-sparkx-omicverse`; the import remains `pysparkx`. On 2026-11-14, the actual PyPI 0.1.0 package was installed in a new Python 3.12 environment and validated against the reference fixtures from its published source archive: **4 passed, no skips**. Tests ran outside the source checkout and imports came from site-packages. See [release workflow](RELEASE.md) for installed-wheel validation and manual Trusted Publishing.
